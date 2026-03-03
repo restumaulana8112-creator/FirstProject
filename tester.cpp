@@ -15,9 +15,16 @@ int main() {
 
     cout << tanggal << endl;
 
-    int a, b, c;
+    /*int a, b, c;
     cin >> a >> b >> c;
     cout << a << " " << b << " " << c << endl;
-    cout << a + b + c << endl;
+    cout << a + b + c << endl;*/
+
+    for (int i = 1; i <= 4; i++) {
+     for (int j = 1; j <= i; j++) {
+        cout << "*";
+     }
+    }
+
     return 0;
 }
