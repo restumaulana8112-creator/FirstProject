@@ -43,7 +43,7 @@ int main() {
         }
       }
     }
-    cout << "\n Soal Kedua:" << endl;
+    cout << "\nSoal Kedua:" << endl;
     for (int i = 1; i <= 4; i++) {
         for (int j = 1; j <= i; j++) {
             if (j % 2 == 0) {
@@ -52,7 +52,7 @@ int main() {
             }
         }
     }
-    cout << "\n Soal Ketiga:" << endl;
+    cout << "\nSoal Ketiga:" << endl;
     for (int i = 1; i <= 6; i++) {
         for (int j = 1; j <= i; j++) {
             if (j % 3 == 0) {
@@ -61,14 +61,14 @@ int main() {
             }
         }
     }
-    cout << "\n Soal Keempat:" << endl;
+    cout << "\nSoal Keempat:" << endl;
     for (int i = 1; i <= 4; i++) {
         if (i % 2 == 0) break;
             for (int j = 1; j <= i; j++) {
                 cout << "*";
             }
     }
-    cout << "\n Soal Kelima:" << endl;
+    cout << "\nSoal Kelima:" << endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j <= i; j++) {
             if (j == 1) {
@@ -77,7 +77,7 @@ int main() {
             }
         }
     }
-    cout << "\n Soal Keenam:" << endl;
+    cout << "\nSoal Keenam:" << endl;
     for (int i = 1; i <= 4; i++) {
         for (int j = 1; j < i; j++) {
             if (j % 2 == 0) {
@@ -86,7 +86,7 @@ int main() {
             }
         }
     }
-    cout << "\n Soal Ketujuh:" << endl;
+    cout << "\nSoal Ketujuh:" << endl;
     for (int i = 1; i <= 5; i += 2) {
         for (int j = 1; j <= i; j++) {
             if (j % 2 == 0) {
@@ -95,14 +95,14 @@ int main() {
             }
         }
     }
-    cout << "\n Soal Kedelapan:" << endl;
+    cout << "\nSoal Kedelapan:" << endl;
     for (int i = 1; i <= 3; i++) {
         for (int j = 1; j <= 5; j++) {
             if (i == 2) break;
             if (j == 1) cout << "*";
         }
     }
-    cout << "\n Soal Kesembilan:" << endl;
+    cout << "\nSoal Kesembilan:" << endl;
     for (int i = 1; i <= 3; i++) {
         for (int j = i; j >= 1; j--) {
             if (j % 2 == 0) {
@@ -111,7 +111,7 @@ int main() {
             }
         }
     }
-    cout << "\n Soal Kesepuluh:" << endl;
+    cout << "\nSoal Kesepuluh:" << endl;
     for (int i = 1; i <= 4; i++) {
         for (int j = 1; j <= 2; j++) {
             if (j % 2 == 0) {
