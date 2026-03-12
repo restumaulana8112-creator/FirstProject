@@ -74,7 +74,9 @@ int main() {
     cout << "\n Soal Kesembilan:" << endl;
 
     cout << "\n Soal Kesepuluh:" << endl;
-    
+
+    cout << "\n Soal Kesepuluh:" << endl;
+
 
     return 0;
 }
