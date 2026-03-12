@@ -62,20 +62,65 @@ int main() {
         }
     }
     cout << "\n Soal Keempat:" << endl;
-
+    for (int i = 1; i <= 4; i++) {
+        if (i % 2 == 0) break;
+            for (int j = 1; j <= i; j++) {
+                cout << "*";
+            }
+    }
     cout << "\n Soal Kelima:" << endl;
-
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j <= i; j++) {
+            if (j == 1) {
+                cout << "*";
+                break;
+            }
+        }
+    }
     cout << "\n Soal Keenam:" << endl;
-
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j < i; j++) {
+            if (j % 2 == 0) {
+                cout << "*";
+                break;
+            }
+        }
+    }
     cout << "\n Soal Ketujuh:" << endl;
-
+    for (int i = 1; i <= 5; i += 2) {
+        for (int j = 1; j <= i; j++) {
+            if (j % 2 == 0) {
+                cout << "*";
+                break;
+            }
+        }
+    }
     cout << "\n Soal Kedelapan:" << endl;
-
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 5; j++) {
+            if (i == 2) break;
+            if (j == 1) cout << "*";
+        }
+    }
     cout << "\n Soal Kesembilan:" << endl;
-
+    for (int i = 1; i <= 3; i++) {
+        for (int j = i; j >= 1; j--) {
+            if (j % 2 == 0) {
+                cout << "*";
+                break;
+            }
+        }
+    }
     cout << "\n Soal Kesepuluh:" << endl;
-
-    cout << "\n Soal Kesepuluh:" << endl;
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 2; j++) {
+            if (j % 2 == 0) {
+                cout << "*";
+                break;
+            }
+        }
+    }
+    
 
 
     return 0;
