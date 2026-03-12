@@ -33,5 +33,48 @@ int main() {
         cout << endl;
     }
 
+    //Soal dari Gemini
+    cout << "\n 10 Soal dari Gemini \n" << "Soal Pertama:" << endl;
+    for (int i = 1; i <= 5; i++) {
+      for (int j = 1; j <= i; j++) {
+        if (j % 2 == 0) {
+            cout << "*";
+            break;
+        }
+      }
+    }
+    cout << "\n Soal Kedua:" << endl;
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= i; j++) {
+            if (j % 2 == 0) {
+                cout << "*";
+                continue;
+            }
+        }
+    }
+    cout << "\n Soal Ketiga:" << endl;
+    for (int i = 1; i <= 6; i++) {
+        for (int j = 1; j <= i; j++) {
+            if (j % 3 == 0) {
+                cout << "*";
+                break;
+            }
+        }
+    }
+    cout << "\n Soal Keempat:" << endl;
+
+    cout << "\n Soal Kelima:" << endl;
+
+    cout << "\n Soal Keenam:" << endl;
+
+    cout << "\n Soal Ketujuh:" << endl;
+
+    cout << "\n Soal Kedelapan:" << endl;
+
+    cout << "\n Soal Kesembilan:" << endl;
+
+    cout << "\n Soal Kesepuluh:" << endl;
+    
+
     return 0;
 }
