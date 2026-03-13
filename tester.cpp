@@ -124,6 +124,7 @@ int main() {
     cout << "\n======10 Soal dari Gemini======\n" << "Soal Pertama:" << endl;
     
     
+    
 
 
     return 0;
