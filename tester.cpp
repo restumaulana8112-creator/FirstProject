@@ -121,10 +121,79 @@ int main() {
         }
     }
 
-    cout << "\n======10 Soal dari Gemini======\n" << "Soal Pertama:" << endl;
-    
-    
-    
+    cout << "\n======10 Soal dari Gemini #2======\n" << "Soal Pertama:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        if (i == 2) continue;
+        for (int j = 1; j <= 2; j++) {
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Kedua:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        if (i == 2) continue;
+        for (int j = 1; j <= 2; j++) {
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Ketiga:" << endl;
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= i; j++) {
+            if (i % 2 != 0) break;
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Keempat:" << endl;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 3; j++) {
+            if (j == 2) continue;
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Kelima:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 3; j >= 1; j--) {
+            if (j == i) break;
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Keenam:" << endl;
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= i; j++) {
+            if (i == 3) break;
+            if (j == 2) cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Ketujuh:" << endl;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 2; j++) {
+            cout << "*";
+            break;
+        }
+    }
+    cout << "\n#2 Soal Kedelapan:" << endl;
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 2; j++) {
+            if ((i + j) % 2 == 0) continue;
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Kesembilan:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 3; j++) {
+            if (j > 1) break;
+            cout << "*";
+        }
+    }
+    cout << "\n#2 Soal Kesepuluh:" << endl;
+    int count = 0;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 5; j++) {
+            count++;
+            if (count == 3) break;
+        }
+    }
+    cout << count;
+    //``` (Anggap output adalah jumlah bintang yang diwakili angka)
 
 
     return 0;
