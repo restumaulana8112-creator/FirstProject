@@ -195,6 +195,92 @@ int main() {
     cout << count;
     //``` (Anggap output adalah jumlah bintang yang diwakili angka)
 
+    cout << "\n======10 Soal dari Gemini #3======\n" << "Soal Pertama:" << endl;
+    int x = 0;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 4; j++) {
+            if (j % 2 == 0) continue;
+            if (i == 2) break;
+            x++;
+        }
+    }
+    cout << "\n#3 Soal Kedua:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= i; j++) {
+            switch(j) {
+                case 1: cout << "*"; break;
+                case 2: break; 
+            }
+        }
+    }
+    cout << "\n#3 Soal Ketiga:" << endl;
+    int hasil = 0;
+    for (int i = 3; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            if (i == j) continue;
+            hasil += j;
+        }
+    }
+    cout << "\n#3 Soal Keempat:" << endl;
+    bool stop = false;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 3; j++) {
+            if (stop) break;
+            if (i + j == 3) {
+                cout << "*";
+                stop = true;
+            }
+        }
+    }
+    cout << "\n#3 Soal Kelima:" << endl;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= (i * 2); j++) {
+            if (j > 2) break;
+            cout << "*";
+        }
+    }
+    cout << "\n#3 Soal Keenam:" << endl;
+    int total = 0;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 3; j++) {
+            if (i == 2 && j == 2) continue;
+            if (i == j) total++;
+        }
+    }
+    cout << "\n#3 Soal Ketujuh:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = i; j <= 3; j++) {
+            if (j == 3) cout << "*";
+        }
+    }
+    cout << "\n#3 Soal Kedelapan:" << endl;
+    for (int i = 3; i >= 1; i--) {
+        for (int j = 1; j <= 3; j++) {
+            if (i + j == 4) {
+                cout << "*";
+                break;
+            }
+        }
+    }
+    cout << "\n#3 Soal Kesembilan:" << endl;
+    for (int i = 3; i >= 1; i--) {
+        for (int j = 1; j <= 3; j++) {
+            if (i + j == 4) {
+                cout << "*";
+                break;
+            }
+        }
+    }
+    cout << "\n#3 Soal Kesepuluh:" << endl;
+    int n = 0;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 5; j++) {
+            n++;
+            if (n > 3) break;
+        }
+        n++;
+    }
+
 
     return 0;
 }
