@@ -318,6 +318,18 @@ int main() {
         n = n / 10;
     }
 
+    cout << "\n======Latihan rutin di TLX======\n" << endl;
+    int N = 10;
+    for (int i = 1; i <= N; i++) {
+        // cetak i buah "*"
+        for (int j = 1; j <= N; j++) {
+            cout << "*";
+        }
+        // sisanya, cetak "."
+        /*for (...) {
+            cout << ".";
+        }*/
+    }
 
     return 0;
 }
