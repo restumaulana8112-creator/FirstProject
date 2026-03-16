@@ -272,15 +272,15 @@ int main() {
         }
     }
     cout << "\n#3 Soal Kesepuluh:" << endl;
-    int n = 0;
+    int m = 0;
     for (int i = 1; i <= 2; i++) {
         for (int j = 1; j <= 5; j++) {
-            n++;
-            if (n > 3) break;
+            m++;
+            if (m > 3) break;
         }
-        n++;
+        m++;
     }
-    cout << n;
+    cout << m;
 
     cout << "\n======4 Soal TOKI bagian D======\n" << "Soal Pertama:" << endl;
     for (int i = 1; i <= 4; i++) {
