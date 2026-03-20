@@ -326,12 +326,12 @@ int main() {
         }
     }
     cout << "\n#4 Soal Kelima:" << endl;
-    int n = 0;
+    int b = 0;
     for (int i = 1; i <= 4; i++) {
         if (i % 2 == 0) continue;
         int j = 1;
         while (j <= i) {
-            n++;
+            b++;
             j++;
         }
     }
@@ -357,14 +357,14 @@ int main() {
         i++;
     }
     cout << "\n#4 Soal Kedelapan:" << endl;
-    int hasil = 0;
+    int result = 0;
     for (int i = 1; i <= 3; i++) {
         int j = i;
         while (j > 0) {
             if (i % 2 == 0) {
-                hasil--;
+                result--;
             } else {
-                hasil++;
+                result++;
             }
             j--;
         }
