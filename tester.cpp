@@ -295,12 +295,12 @@ int main() {
         }
     }
     cout << "\n#4 Soal Kedua:" << endl;
-    int x = 10;
+    int y = 10;
     for (int i = 1; i <= 2; i++) {
         int j = 5;
         while (j > i) {
             if (j == 4) break;
-            x -= i;
+            y -= i;
             j--;
         }
     }
