@@ -282,6 +282,117 @@ int main() {
     }
     cout << m;
 
+    cout << "\n======10 Soal dari Gemini #4======\n" << "#4 Soal Pertama:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        int j = 1;
+        while (j <= i) {
+            if (i + j == 4) {
+                j++;
+                continue;
+            }
+            cout << "*";
+            j++;
+        }
+    }
+    cout << "\n#4 Soal Kedua:" << endl;
+    int x = 10;
+    for (int i = 1; i <= 2; i++) {
+        int j = 5;
+        while (j > i) {
+            if (j == 4) break;
+            x -= i;
+            j--;
+        }
+    }
+    cout << "\n#4 Soal Ketiga:" << endl;
+    for (int i = 1; i <= 3; i++) {
+    int j = 1;
+        while (true) {
+            if (j > 2) break;
+            if (i == j) {
+                j++;
+                continue;
+            }
+            cout << "*";
+            j++;
+        }
+    }
+    cout << "\n#4 Soal Keempat:" << endl;
+    for (int i = 1; i <= 2; i++) {
+    int j = 1;
+        while (j <= 4) {
+            cout << "*";
+            j += i;
+        }
+    }
+    cout << "\n#4 Soal Kelima:" << endl;
+    int n = 0;
+    for (int i = 1; i <= 4; i++) {
+        if (i % 2 == 0) continue;
+        int j = 1;
+        while (j <= i) {
+            n++;
+            j++;
+        }
+    }
+    cout << "\n#4 Soal Keenam:" << endl;
+    for (int i = 1; i <= 2; i++) {
+    int j = 1;
+        while (j * i <= 4) {
+            if (j == 2) {
+                j++;
+                continue;
+            }
+            cout << "*";
+            j++;
+        }
+    }
+    cout << "\n#4 Soal Ketujuh:" << endl;
+    int i = 1;
+    while (i <= 3) {
+        for (int j = 1; j <= 2; j++) {
+            if (i == 2) break;
+            cout << "*";
+        }
+        i++;
+    }
+    cout << "\n#4 Soal Kedelapan:" << endl;
+    int hasil = 0;
+    for (int i = 1; i <= 3; i++) {
+        int j = i;
+        while (j > 0) {
+            if (i % 2 == 0) {
+                hasil--;
+            } else {
+                hasil++;
+            }
+            j--;
+        }
+    }
+    cout << "\n#4 Soal Kesembilan:" << endl;
+    for (int i = 1; i <= 3; i++) {
+    int j = 1;
+        while (j <= 3) {
+            if (j == i) {
+                j++;
+                continue;
+            }
+            cout << "*";
+            j++;
+        }
+    }
+    cout << "\n#4 Soal Kesepuluh:" << endl;
+    int limit = 2;
+    for (int i = 1; i <= limit; i++) {
+        int j = 1;
+        while (j <= 2) {
+            cout << "*";
+            if (i == 1 && j == 1) limit = 3;
+            j++;
+        }
+    }
+
+
     cout << "\n======4 Soal TOKI bagian D======\n" << "Soal Pertama:" << endl;
     for (int i = 1; i <= 4; i++) {
         for (int j = 1; j <= i; j++) {
