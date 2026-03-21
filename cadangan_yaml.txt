@@ -20,25 +20,24 @@ jobs:
     - name: Compile and Run All CPP Files
       shell: powershell
       run: |
-        # Cari semua file .cpp di folder utama
-        $cppFiles = Get-ChildItem -Filter *.cpp
-        
-        foreach ($file in $cppFiles) {
-          $nameOnly = $file.BaseName
-          echo "---------------------------------------"
-          echo "PROSES FILE: $($file.Name)"
+        Get-ChildItem -Filter *.cpp | ForEach-Object {
+          $file = $_.Name
+          $exe = $_.BaseName + ".exe"
           
-          # 1. Kompilasi
-          cl.exe /EHsc $file.Name
+          Write-Host "---------------------------------------"
+          Write-Host "COMPILING: $file"
           
-          # 2. Cek apakah kompilasi berhasil (file .exe tercipta)
-          if (Test-Path "$nameOnly.exe") {
-            echo "HASIL RUN PROGRAM $nameOnly:"
-            .\$nameOnly.exe
-            echo "" 
+          # Jalankan kompilasi
+          cl.exe /EHsc $file
+          
+          if ($LastExitCode -eq 0) {
+            Write-Host "RUNNING: $exe"
+            Write-Host "OUTPUT:"
+            ./$exe
+            Write-Host ""
           } else {
-            echo "GAGAL KOMPILASI: $($file.Name)"
-            exit 1 # Berhenti dan kasih tanda silang merah kalau ada yang error
+            Write-Host "ERROR: Gagal mengompilasi $file"
+            exit 1
           }
         }
 
