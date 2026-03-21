@@ -1,0 +1,68 @@
+name: C++ Auto Build and Run
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup MSVC
+      uses: ilammy/msvc-dev-cmd@v1
+
+    - name: Compile and Run All CPP Files
+      shell: powershell
+      run: |
+        # Cari semua file .cpp di folder utama
+        $cppFiles = Get-ChildItem -Filter *.cpp
+        
+        foreach ($file in $cppFiles) {
+          $nameOnly = $file.BaseName
+          echo "---------------------------------------"
+          echo "PROSES FILE: $($file.Name)"
+          
+          # 1. Kompilasi
+          cl.exe /EHsc $file.Name
+          
+          # 2. Cek apakah kompilasi berhasil (file .exe tercipta)
+          if (Test-Path "$nameOnly.exe") {
+            echo "HASIL RUN PROGRAM $nameOnly:"
+            .\$nameOnly.exe
+            echo "" 
+          } else {
+            echo "GAGAL KOMPILASI: $($file.Name)"
+            exit 1 # Berhenti dan kasih tanda silang merah kalau ada yang error
+          }
+        }
+
+======================================================================================
+
+
+name: C++ MSVC Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup MSVC Developer Command Prompt
+      uses: ilammy/msvc-dev-cmd@v1
+
+    - name: Compile idulfitri.cpp
+      run: cl.exe /EHsc idulfitri.cpp
+
+    - name: Run Program
+      run: .\idulfitri.exe
