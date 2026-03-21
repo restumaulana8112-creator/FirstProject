@@ -17,31 +17,32 @@ jobs:
     - name: Setup MSVC
       uses: ilammy/msvc-dev-cmd@v1
 
-    - name: Compile and Run All CPP Files
+    - name: Compile and Run
       shell: powershell
       run: |
-        Get-ChildItem -Filter *.cpp | ForEach-Object {
-          $file = $_.Name
-          $exe = $_.BaseName + ".exe"
+        # Cari semua file .cpp
+        $files = Get-ChildItem -Filter *.cpp
+        
+        foreach ($f in $files) {
+          Write-Host "--- MENGOMPILASI: $($f.Name) ---"
           
-          Write-Host "---------------------------------------"
-          Write-Host "COMPILING: $file"
+          # Kompilasi menjadi file .exe dengan nama yang sama
+          cl.exe /EHsc $($f.Name)
           
-          # Jalankan kompilasi
-          cl.exe /EHsc $file
+          $exeName = $f.BaseName + ".exe"
           
-          if ($LastExitCode -eq 0) {
-            Write-Host "RUNNING: $exe"
-            Write-Host "OUTPUT:"
-            ./$exe
-            Write-Host ""
+          if (Test-Path $exeName) {
+            Write-Host "--- MENJALANKAN: $exeName ---"
+            # Cara panggil exe yang paling aman di PowerShell GitHub
+            & ".\$exeName"
+            Write-Host "-----------------------------"
           } else {
-            Write-Host "ERROR: Gagal mengompilasi $file"
+            Write-Host "Gagal membuat $exeName"
             exit 1
           }
         }
 
-======================================================================================
+============================================================================================
 //Ini untuk ngedit file YAML setiap bikin file baru
 
 name: C++ MSVC Build
