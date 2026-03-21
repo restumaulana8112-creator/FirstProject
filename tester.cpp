@@ -240,11 +240,11 @@ int main() {
         }
     }
     cout << "\n#3 Soal Keenam:" << endl;
-    int total = 0;
+    int semua = 0;
     for (int i = 1; i <= 3; i++) {
         for (int j = 1; j <= 3; j++) {
             if (i == 2 && j == 2) continue;
-            if (i == j) total++;
+            if (i == j) semua++;
         }
     }
     cout << "\n#3 Soal Ketujuh:" << endl;
@@ -389,6 +389,112 @@ int main() {
             cout << "*";
             if (i == 1 && j == 1) limit = 3;
             j++;
+        }
+    }
+
+    cout << "\n======10 Soal dari Gemini #5======\n" << "#5 Soal Pertama:" << endl;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 2; j++) {
+            for (int k = 1; k <= 3; k++) {
+                if (k == 2) break;
+                cout << "*";
+            }
+        }
+    }
+    cout << "\n#5 Soal Kedua:" << endl;
+    for (int i = 1; i <= 3; i++) {
+    int j = 1;
+        while (j <= 3) {
+            if (i + j == 4) {
+                j++;
+                continue;
+            }
+            if (j == 3) break;
+            cout << "*";
+            j++;
+        }
+    }
+    cout << "\n#5 Soal Ketiga:" << endl;
+    int q = 0;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= i; j++) {
+            if (i % 2 == 0) continue;
+            if (j == 2) break;
+            q += i;
+        }
+    }
+    cout << "\n#5 Soal Keempat:" << endl;
+    int total = 0; //int total berada di luar loop, sehingga nilainya akan terus bertambah setiap kali loop dijalankan, bukan di-reset menjadi 0 setiap kali loop dimulai.
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 5; j++) {
+            if (total >= 3) break;
+            cout << "*";
+            total++;
+        }
+    }
+    cout << "\n#5 Soal Kelima:" << endl;
+    for (int i = 3; i >= 1; i--) {
+    int j = 3;
+        while (j >= 1) {
+            if (i == j) {
+                j--;
+                continue;
+            }
+            cout << "*";
+            if (i + j == 3) break;
+            j--;
+        }
+    }
+    cout << "\n#5 Soal Keenam:" << endl;
+    int j = 0;
+    for (int i = 1; i <= 2; i++) {
+        for (j = 1; j <= 3; j++) {
+            if (i == 1 && j == 2) continue;
+            cout << "*";
+        }
+        if (j > 3) cout << "*";
+    }
+    cout << "\n#5 Soal Ketujuh:" << endl;
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 3; j++) {
+            if (i * j > 3) {
+                if (i == j) break;
+                cout << "*";
+            }
+        }
+    }
+    cout << "\n#5 Soal Kedelapan:" << endl;
+    int hitung = 0;
+    for (int i = 1; i <= 2; i++) {
+        int j = 1;
+        while (j <= 3) {
+            if (i == 1) {
+                j += 2;
+                hitung++;
+                continue;
+            }
+            hitung++;
+            j++;
+        }
+        cout << hitung << endl;
+    }
+    cout << "\n#5 Soal Kesembilan:" << endl;
+    for (int i = 1; i <= 2; i++) {
+    int j = 1;
+    cout << "A";
+        while (j <= 2) {
+            if (i == 2) break;
+            cout << "B";
+            j++;
+        }
+    }
+    cout << "\n#5 Soal Kesepuluh:" << endl;
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 3; j++) {
+            for (int k = j; k <= 3; k++) {
+                if (i + j + k > 5) continue;
+                cout << "*";
+            }
         }
     }
 
