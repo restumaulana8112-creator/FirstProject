@@ -1,3 +1,5 @@
+//Ini kalau gak mau ngedit file YAML setiap bikin file baru
+
 name: C++ Auto Build and Run
 
 on:
@@ -41,7 +43,7 @@ jobs:
         }
 
 ======================================================================================
-
+//Ini untuk ngedit file YAML setiap bikin file baru
 
 name: C++ MSVC Build
 
