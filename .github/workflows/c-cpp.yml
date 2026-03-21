@@ -1,6 +1,10 @@
 name: C++ MSVC Build
 
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -9,11 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup MSVC
+    - name: Setup MSVC Developer Command Prompt
       uses: ilammy/msvc-dev-cmd@v1
 
-    - name: Compile Code
-      run: cl /EHsc tester.cpp
+    - name: Compile tester.cpp
+      run: cl.exe /EHsc tester.cpp
 
-    - name: Run Tester
+    - name: Run Program
       run: .\tester.exe
