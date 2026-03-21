@@ -488,7 +488,7 @@ int main() {
             j++;
         }
     }
-    cout << "\n#5 Soal Kesepuluh:" << endl;
+    cout << "\n#5 Soal Kesepuluh: " << endl;
     for (int i = 1; i <= 2; i++) {
         for (int j = 1; j <= 3; j++) {
             for (int k = j; k <= 3; k++) {
