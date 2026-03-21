@@ -16,8 +16,8 @@ jobs:
     - name: Setup MSVC Developer Command Prompt
       uses: ilammy/msvc-dev-cmd@v1
 
-    - name: Compile tester.cpp
-      run: cl.exe /EHsc tester.cpp
+    - name: Compile idulfitri.cpp
+      run: cl.exe /EHsc idulfitri.cpp
 
     - name: Run Program
-      run: .\tester.exe
+      run: .\idulfitri.exe
