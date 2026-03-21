@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-int main() { //Credit: Farel Khaddafi on Informatika | Dirac Project 2026 
+int main() { //Credit: Farel Khaddafi on Informatika | Dirac Project 2026  
     string hati = "penuh_kesalahan";
     bool maaf = false;
 
