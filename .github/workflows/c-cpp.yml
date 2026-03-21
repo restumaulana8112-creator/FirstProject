@@ -13,7 +13,7 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1
 
     - name: Compile Code
-      run: cl /EHsc tester.cpp
+      run: cl /EHsc number.cpp
 
     - name: Run Tester
-      run: .\tester.exe
+      run: .\number.exe
